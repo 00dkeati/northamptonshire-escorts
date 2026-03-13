@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { towns, escortTypes, serviceTypes } from "@/data/seo-config";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://bedfordshireescorts.agency";
+  const baseUrl = "https://northamptonshireescorts.agency";
   const now = new Date();
 
   // Static pages
