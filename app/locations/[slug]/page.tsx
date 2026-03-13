@@ -3,118 +3,118 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 const towns: Record<string, { name: string; description: string; content: string }> = {
-  "bedford": {
-    name: "Bedford",
-    description: "Premier outcall escort services in Bedford, Northamptonshire's historic county town",
-    content: `Bedford is the historic county town of Northamptonshire and home to many of our most sought-after escorts. 
-    With its beautiful River Great Ouse embankment, excellent hotels, and vibrant hospitality scene, Bedford is the perfect setting for an unforgettable encounter.
-    As an outcall-only agency, our Bedford escorts travel directly to your home, hotel, or private venue throughout the town, 
-    including the town centre, Kempston, Goldington, and surrounding areas.`
+  "northampton": {
+    name: "Northampton",
+    description: "Premier outcall escort services in Northampton, Northamptonshire's historic county town",
+    content: `Northampton is the historic county town and largest city in Northamptonshire, home to many of our most sought-after escorts. 
+    With its beautiful Market Square, excellent hotels like the Hilton and Marriott, and vibrant hospitality scene, Northampton is the perfect setting for an unforgettable encounter.
+    As an outcall-only agency, our Northampton escorts travel directly to your home, hotel, or private venue throughout the city, 
+    including the town centre, Far Cotton, Abington, Weston Favell, and surrounding areas.`
   },
-  "luton": {
-    name: "Luton",
-    description: "Elite escorts in Luton, Northamptonshire's largest and most vibrant town",
-    content: `Luton, the largest town in Northamptonshire, offers a multicultural and vibrant setting for quality companionship.
-    Our Luton escorts are sophisticated companions ideal for dinner dates at the town's diverse restaurants or private encounters.
-    We cover all areas including the town centre, London Luton Airport hotels, Harpenden borders, and surrounding neighbourhoods.`
+  "kettering": {
+    name: "Kettering",
+    description: "Elite escorts in Kettering, a thriving market town with excellent amenities",
+    content: `Kettering is a thriving market town in North Northamptonshire, offering quality companionship in a welcoming setting.
+    Our Kettering escorts are sophisticated companions ideal for dinner dates at the town's excellent restaurants or private encounters.
+    We cover all areas including the town centre, Kettering Park Hotel & Spa, Rothwell Road, and surrounding neighbourhoods.`
   },
-  "dunstable": {
-    name: "Dunstable",
-    description: "Premium escort services in Dunstable, at the foot of the beautiful Chiltern Hills",
-    content: `Dunstable, an ancient market town with Roman origins, combines rich history with modern amenities. 
-    Our Dunstable escorts offer refined companionship for clients seeking discretion and quality near the stunning Dunstable Downs.
-    Services are available throughout Dunstable, including Houghton Regis and surrounding villages.`
+  "corby": {
+    name: "Corby",
+    description: "Premium escort services in Corby, a modern and vibrant town",
+    content: `Corby, once known as 'Little Scotland', has transformed into a modern, growing town with excellent transport links. 
+    Our Corby escorts offer refined companionship for clients seeking quality and discretion in this dynamic setting.
+    Services are available throughout Corby, including the town centre, Oakley Hay, and surrounding villages.`
   },
-  "leighton-buzzard": {
-    name: "Leighton Buzzard",
-    description: "Sophisticated escorts in Leighton Buzzard, a charming market town with excellent connections",
-    content: `Leighton Buzzard, with its beautiful high street and traditional market, attracts clients seeking quality companionship.
-    Our Leighton Buzzard escorts reflect the town's charming character, offering elegant company for any occasion.
-    We serve the town centre, the canal-side areas, and nearby Linslade.`
+  "wellingborough": {
+    name: "Wellingborough",
+    description: "Sophisticated escorts in Wellingborough, a charming market town with great connections",
+    content: `Wellingborough, with its historic market square and excellent rail links to London, attracts clients seeking quality companionship.
+    Our Wellingborough escorts reflect the town's charming character, offering elegant company for any occasion.
+    We serve the town centre, Castle Quay, Finedon Road, and nearby villages.`
   },
-  "biggleswade": {
-    name: "Biggleswade",
-    description: "Discreet escort services in Biggleswade, a traditional market town on the River Ivel",
-    content: `Nestled on the River Ivel, Biggleswade offers a peaceful setting for those seeking quality companionship.
-    Our Biggleswade escorts provide discreet, professional services in this charming market town.
-    Coverage includes Biggleswade town centre and the surrounding Central Northamptonshire countryside.`
+  "daventry": {
+    name: "Daventry",
+    description: "Discreet escort services in Daventry, surrounded by beautiful countryside",
+    content: `Set amid rolling countryside in West Northamptonshire, Daventry offers a peaceful setting for quality companionship.
+    Our Daventry escorts provide discreet, professional services in this charming market town.
+    Coverage includes Daventry town centre, the business parks, and the surrounding villages.`
   },
-  "sandy": {
-    name: "Sandy",
-    description: "Quality escorts in Sandy, home to the RSPB headquarters",
-    content: `Sandy is a quiet market town with excellent wildlife credentials and a peaceful atmosphere.
-    Our Sandy escorts provide refined companionship in this tranquil setting, perfect for those seeking discretion.
-    Services extend to the RSPB Lodge area and surrounding villages.`
+  "rushden": {
+    name: "Rushden",
+    description: "Quality escorts in Rushden, home to the popular Rushden Lakes",
+    content: `Rushden has been transformed by the popular Rushden Lakes shopping and leisure complex.
+    Our Rushden escorts provide refined companionship in this exciting area with excellent hotel options.
+    Services extend to Rushden Lakes, the town centre, and neighbouring Higham Ferrers.`
   },
-  "ampthill": {
-    name: "Ampthill",
-    description: "Premium escorts in Ampthill, one of the UK's best places to live",
-    content: `The picturesque Georgian market town of Ampthill, consistently ranked among Britain's finest, is perfect for sophisticated encounters.
-    Our Ampthill escorts match the town's elegant character with style and refinement.
-    We cover Ampthill, Ampthill Great Park, and surrounding areas including Flitwick.`
+  "brackley": {
+    name: "Brackley",
+    description: "Premium escorts in Brackley, near the famous Silverstone Circuit",
+    content: `The elegant market town of Brackley, near the world-famous Silverstone Circuit, attracts motorsport enthusiasts and business visitors.
+    Our Brackley escorts match the town's sophisticated character with style and refinement.
+    We cover Brackley, Silverstone, and surrounding South Northamptonshire villages.`
   },
-  "flitwick": {
-    name: "Flitwick",
-    description: "Well-connected escorts in Flitwick, with excellent rail links to London",
-    content: `Flitwick offers excellent transport connections while maintaining a pleasant suburban character.
-    Our Flitwick escorts provide quality companionship for both local residents and business travellers.
-    Services available throughout Flitwick and to nearby Ampthill.`
+  "towcester": {
+    name: "Towcester",
+    description: "Well-connected escorts in Towcester, one of England's oldest towns",
+    content: `Towcester, one of England's oldest towns on the historic Watling Street, offers a charming backdrop for quality companionship.
+    Our Towcester escorts provide sophisticated services in this historic setting.
+    Services available throughout Towcester and to the nearby racecourse area.`
   },
-  "kempston": {
-    name: "Kempston",
-    description: "Convenient escort services in Kempston, adjacent to Bedford",
-    content: `Kempston, directly adjoining Bedford, offers suburban convenience with easy access to the county town's amenities.
-    Our Kempston escorts provide discreet, professional services in this residential area.
-    Coverage extends throughout Kempston and into central Bedford.`
+  "oundle": {
+    name: "Oundle",
+    description: "Elegant escort services in Oundle, a beautiful limestone market town",
+    content: `The beautiful limestone town of Oundle, home to the prestigious school, provides an elegant setting for refined encounters.
+    Our Oundle escorts offer discreet, professional services in this sophisticated Northamptonshire gem.
+    Coverage extends throughout Oundle and the surrounding Nene Valley villages.`
   },
-  "shefford": {
-    name: "Shefford",
-    description: "Boutique escort services in the charming town of Shefford",
-    content: `The charming market town of Shefford, with its strong community spirit and traditional character, is perfect for discreet encounters.
-    Our Shefford escorts offer intimate, professional companionship in this Central Northamptonshire gem.
-    Services available throughout Shefford and surrounding villages.`
+  "thrapston": {
+    name: "Thrapston",
+    description: "Boutique escort services in the charming town of Thrapston",
+    content: `The charming market town of Thrapston, with its famous nine-arch bridge, is perfect for discreet encounters.
+    Our Thrapston escorts offer intimate, professional companionship on the banks of the River Nene.
+    Services available throughout Thrapston and surrounding villages.`
   },
-  "houghton-regis": {
-    name: "Houghton Regis",
-    description: "Quality escorts in Houghton Regis, adjacent to Dunstable",
-    content: `Houghton Regis, adjoining Dunstable, provides easy access to the Chilterns and South Northamptonshire.
-    Our Houghton Regis escorts serve clients seeking discretion with convenient access to Dunstable Downs.
-    Coverage includes Houghton Regis and neighbouring Dunstable areas.`
+  "rothwell": {
+    name: "Rothwell",
+    description: "Quality escorts in Rothwell, a historic market town near Kettering",
+    content: `Rothwell, with its famous Holy Trinity Church, provides a historic backdrop for quality companionship.
+    Our Rothwell escorts serve clients seeking discretion in this traditional market town.
+    Coverage includes Rothwell and connections to nearby Kettering.`
   },
-  "potton": {
-    name: "Potton",
-    description: "Intimate escort experiences in the historic town of Potton",
-    content: `The historic market town of Potton, with roots dating to the Domesday Book, provides a charming backdrop.
-    Our Potton escorts offer intimate, quality companionship in this traditional Northamptonshire setting.
-    Services available in Potton and the surrounding countryside.`
+  "desborough": {
+    name: "Desborough",
+    description: "Intimate escort experiences in the town of Desborough",
+    content: `Desborough offers a quiet setting for those seeking quality companionship away from larger towns.
+    Our Desborough escorts offer intimate, quality companionship in this friendly Northamptonshire setting.
+    Services available in Desborough and the surrounding area.`
   },
-  "stotfold": {
-    name: "Stotfold",
-    description: "Discreet escort services in the growing community of Stotfold",
-    content: `Stotfold, a growing village with excellent transport links, offers convenient access to quality companionship.
-    Our Stotfold escorts provide discreet, professional services in this friendly community.
-    We serve Stotfold and connections to nearby Biggleswade and Hitchin.`
+  "raunds": {
+    name: "Raunds",
+    description: "Discreet escort services in the growing town of Raunds",
+    content: `Raunds, a growing town with excellent A45 connections, offers convenient access to quality companionship.
+    Our Raunds escorts provide discreet, professional services in this friendly community.
+    We serve Raunds and connections to nearby Rushden and Wellingborough.`
   },
-  "arlesey": {
-    name: "Arlesey",
-    description: "Historic village escorts in Arlesey, one of Northamptonshire's oldest settlements",
-    content: `Arlesey, one of Northamptonshire's oldest villages with its own railway station, offers convenient access to quality companionship.
-    Our Arlesey escorts provide refined services in this historic setting with excellent rail connections.
-    Coverage includes Arlesey, the Blue Lagoon area, and surrounding villages.`
+  "higham-ferrers": {
+    name: "Higham Ferrers",
+    description: "Historic escorts in Higham Ferrers, a picturesque medieval market town",
+    content: `Higham Ferrers, with its stunning Chichele College and medieval market square, provides a charming backdrop.
+    Our Higham Ferrers escorts provide refined services in this historic setting.
+    Coverage includes Higham Ferrers and neighbouring Rushden.`
   },
-  "cranfield": {
-    name: "Cranfield",
-    description: "Sophisticated escorts in Cranfield, home to the prestigious university",
-    content: `Cranfield, home to the renowned university, attracts an international clientele seeking sophisticated companionship.
-    Our Cranfield escorts match the academic and professional character of this unique village.
-    Services available throughout Cranfield and surrounding areas.`
+  "irthlingborough": {
+    name: "Irthlingborough",
+    description: "Convenient escorts in Irthlingborough, on the banks of the River Nene",
+    content: `Irthlingborough offers convenient access to quality companionship on the banks of the River Nene.
+    Our Irthlingborough escorts provide quality services in this historic town.
+    Services available throughout Irthlingborough and surrounding villages.`
   },
-  "woburn": {
-    name: "Woburn",
-    description: "Exclusive escorts in Woburn, famous for the Abbey and Safari Park",
-    content: `The elegant Georgian village of Woburn, famous for Woburn Abbey and Safari Park, attracts discerning visitors.
-    Our Woburn escorts offer exclusive companionship matching the village's upmarket character.
-    We serve Woburn, the Abbey estate area, and surrounding Northamptonshire villages.`
+  "burton-latimer": {
+    name: "Burton Latimer",
+    description: "Exclusive escorts in Burton Latimer, close to Kettering",
+    content: `Burton Latimer offers a quieter alternative to Kettering while remaining well-connected.
+    Our Burton Latimer escorts offer exclusive companionship matching the town's friendly character.
+    We serve Burton Latimer and surrounding Northamptonshire villages.`
   },
 };
 

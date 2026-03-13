@@ -3,26 +3,26 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Locations | Northamptonshire Escorts Agency",
-  description: "Find escorts across all of Northamptonshire. Bedford, Luton, Dunstable, Leighton Buzzard, Biggleswade and 10+ more towns covered.",
+  description: "Find escorts across all of Northamptonshire. Northampton, Kettering, Corby, Wellingborough, Daventry and 10+ more towns covered.",
 };
 
 const towns = [
-  { slug: "bedford", name: "Bedford", description: "Northamptonshire's historic county town with premium escorts" },
-  { slug: "luton", name: "Luton", description: "Diverse companions in Northamptonshire's largest town" },
-  { slug: "dunstable", name: "Dunstable", description: "Elite escorts at the foot of the Chilterns" },
-  { slug: "leighton-buzzard", name: "Leighton Buzzard", description: "Charming market town companionship" },
-  { slug: "biggleswade", name: "Biggleswade", description: "Discreet services in Central Northamptonshire" },
-  { slug: "sandy", name: "Sandy", description: "Peaceful town with quality escorts" },
-  { slug: "ampthill", name: "Ampthill", description: "Georgian elegance meets premium service" },
-  { slug: "flitwick", name: "Flitwick", description: "Well-connected town with excellent companions" },
-  { slug: "kempston", name: "Kempston", description: "Quality companionship near Bedford" },
-  { slug: "shefford", name: "Shefford", description: "Boutique escort services" },
-  { slug: "houghton-regis", name: "Houghton Regis", description: "Premium escorts in South Northamptonshire" },
-  { slug: "potton", name: "Potton", description: "Intimate escort experiences" },
-  { slug: "stotfold", name: "Stotfold", description: "Discreet companionship services" },
-  { slug: "arlesey", name: "Arlesey", description: "Historic village with elite escorts" },
-  { slug: "cranfield", name: "Cranfield", description: "Sophisticated university town companions" },
-  { slug: "woburn", name: "Woburn", description: "Exclusive escorts for discerning clients" },
+  { slug: "northampton", name: "Northampton", description: "Northamptonshire's historic county town with premium escorts" },
+  { slug: "kettering", name: "Kettering", description: "Thriving market town with quality companions" },
+  { slug: "corby", name: "Corby", description: "Modern town with excellent escorts" },
+  { slug: "wellingborough", name: "Wellingborough", description: "Charming market town companionship" },
+  { slug: "daventry", name: "Daventry", description: "Discreet services in West Northamptonshire" },
+  { slug: "rushden", name: "Rushden", description: "Quality escorts near Rushden Lakes" },
+  { slug: "brackley", name: "Brackley", description: "Sophisticated escorts near Silverstone" },
+  { slug: "towcester", name: "Towcester", description: "Historic town with premium service" },
+  { slug: "oundle", name: "Oundle", description: "Elegant escorts in a beautiful setting" },
+  { slug: "thrapston", name: "Thrapston", description: "Boutique escort services" },
+  { slug: "rothwell", name: "Rothwell", description: "Quality companions near Kettering" },
+  { slug: "desborough", name: "Desborough", description: "Intimate escort experiences" },
+  { slug: "raunds", name: "Raunds", description: "Discreet companionship services" },
+  { slug: "higham-ferrers", name: "Higham Ferrers", description: "Historic town with elite escorts" },
+  { slug: "irthlingborough", name: "Irthlingborough", description: "Premium escort services" },
+  { slug: "burton-latimer", name: "Burton Latimer", description: "Exclusive escorts for discerning clients" },
 ];
 
 export default function LocationsPage() {
